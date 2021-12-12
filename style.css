@@ -100,6 +100,12 @@ h2 {
 .radio-base {
     display: none;
 }
+.radio-input::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 
 .radio-base:checked + .radio-input {
     background: #FF9846;
@@ -113,7 +119,8 @@ h2 {
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 20px;
-
+    text-align: center;
+    vertical-align: middle;
 }
 
 .radio-input.left {
