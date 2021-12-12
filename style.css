@@ -100,6 +100,9 @@ h2 {
 .radio-base {
     display: none;
 }
+.radio-input:hover{
+    opacity: 0.8;
+}
 .radio-input::before{
     content: '';
     display: inline-block;
@@ -140,6 +143,7 @@ h2 {
 .checkbox{
 position: relative;
 margin-right: 50px;
+cursor: pointer;
 }
 .checkbox-bases{
     -webkit-appearance: none;
@@ -214,6 +218,7 @@ margin-right: 50px;
     position: relative;
     margin-left: 110px;
 }
+
 .minus{
     width: 20px;
     height: 20px;
@@ -221,6 +226,10 @@ margin-right: 50px;
     background: transparent;
     border: 1px solid #FF9846;
     display: inline-block;
+    cursor: pointer;
+}
+.minus:hover{
+    opacity: 0.8;
 }
 .plus{
     width: 20px;
@@ -229,6 +238,10 @@ margin-right: 50px;
     background: transparent;
     border: 1px solid #FF9846;
     background-color: #FF9846;
+    cursor: pointer;
+}
+.plus:hover{
+    opacity: 0.8;
 }
 .plus::before{
     content: '';
@@ -273,4 +286,8 @@ margin-right: 50px;
     margin-top: 40px;
     color: white;
     background: rgba(244, 109, 64, 1);
+    cursor: pointer;
+}
+.order:hover{
+    opacity: 0.8;
 }
