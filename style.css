@@ -291,3 +291,6 @@ cursor: pointer;
 .order:hover{
     opacity: 0.8;
 }
+.order:active{
+    opacity: 1;
+}
