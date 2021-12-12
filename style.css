@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.make-order {
+    background: #F2F2F2;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    border-bottom: 0.5px solid #A4ACAD;
+    padding: 10px 0 10px 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.go-back-info,  .phone-description,  .phone-number, .work-hours {
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.phone-number {
+    color: #FF9846;
+}
+
+.work-hours {
+    color: #A4ACAD;
+    font-size: 14px;
+}
+
+.go-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.go-back-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #FF9846;
+    margin-right: 10px;
+}
+
+.go-back-arrow::before {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(6px, 12px) rotate(45deg); 
+}
+
+.go-back-arrow::after {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(6px, 8px) rotate(-45deg);
+}
+
+h2 {
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin: 55px 0 30px 300px;
+    display: flex;
+}
+
+
+.basic-input {
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+}
+
+.tel-input {
+    margin-right: 20px;
+}
+
+.radio-base {
+    display: none;
+}
+
+.radio-base:checked + .radio-input {
+    background: #FF9846;
+    color: white;
+}
+
+.radio-input {
+    display: inline-block;
+    width: 212px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.radio-input.left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.radio-input.right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -5px;
+}
+.input-checkbox-text{
+    display: flex;
+    align-items: center;
+}
+.checkbox{
+position: relative;
+margin-right: 50px;
+}
+.checkbox-bases{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.checkbox-input-sum{
+    padding-left: 45px;
+}
+.checkbox-input-sum::before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FF9846;
+        border-radius: 100%;
+        background-color: #fff;
+}
+.checkbox-input-sum::after{
+    content: '';
+    
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FF9846;
+    border-radius: 100%;
+    background: url(./dow.png) no-repeat;
+    background-size: 15px 15px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+}
+.checkbox-bases:checked + .checkbox-input-sum::before{
+    background-color: #FF9846;
+}
+.checkbox-bases:checked + .checkbox-input-sum::after{
+    opacity: 1;
+}
+.amount-input{
+    width: 152px;
+}
+.comment{
+    margin-top: 20px;
+    width: 422px;
+    margin-bottom: 20px;
+}
+.sticks{
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+}
+
+.sticks-one{
+    margin-bottom: 10px;}
+
+.ten{
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+}
+.sticks-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.minus-plus{
+    position: relative;
+    margin-left: 110px;
+}
+.minus{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #FF9846;
+    display: inline-block;
+}
+.plus{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #FF9846;
+    background-color: #FF9846;
+}
+.plus::before{
+    content: '';
+    width: 8px;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transform: translate(-3.5px, -1.5px) rotate(90deg);
+}
+.plus::after{
+    content: '';
+    width: 8px;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transform: translate(-3.5px, -1.5px)
+}
+.minus::before{
+    content: '';
+    width: 8px;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transform: translate(-3.5px, -1.5px);
+}
+.address-input{
+    width: 93px;
+    margin-left: 13px;
+    margin-top: 20px;
+}
+.VK-input{
+    width: 93px;
+}
+.form-right{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.E-mail{
+    width: 422px;
+    margin-top: 5px;
+}
+.order{
+    width: 880px;
+    margin-left: 300px;
+    margin-top: 40px;
+    color: white;
+    background: rgba(244, 109, 64, 1);
+}

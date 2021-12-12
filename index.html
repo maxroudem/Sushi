@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Вход на сайт</title>
+</head>
+
+<body>
+    <section class="make-order">
+        <header class="header">
+            <div class="go-back">
+                <div class="go-back-arrow"></div>
+                <span class="go-back-info">Продолжить выбор</span>
+            </div>
+
+            <p class="contact-info">
+                <span class="phone-description">Наш телефон</span>
+                <span class="phone-number">
+                    +996 705 188 955
+                </span>
+                <span class="phone-number">
+                    +996 555 188 955
+                </span>
+                <span class="work-hours">
+                    <img src="./clock.png" alt="clock">
+                    работаем с 10:00 до 00:00
+                </span>
+            </p>
+        </header>
+        
+        <form class="form">
+
+            <div class="form-left" >    
+
+            <h2>Ваши данные</h2>
+
+                <input type="text" placeholder="Телефон" class="basic-input tel-input">
+                <input type="text" placeholder="Имя" class="basic-input">
+
+                <div>
+                <input class="radio-base" type="radio" name="payType" id="cash" checked>
+                <label class="basic-input radio-input left" for="cash">Наличными</label>
+
+                <input class="radio-base" type="radio" name="payType" id="card">
+                <label class="basic-input radio-input right" for="card">Картой</label>
+                </div>
+
+                <div class="input-checkbox-text" >
+
+                <div class="checkbox" >
+                <input class="checkbox-bases" type="checkbox" id="sum">
+                <label class="basic-input checkbox-input-sum" for="sum">подготовить сдачу с</label>
+                </div>
+                
+                <div class="text-amount">
+                <input type="text" placeholder="Cумма" class="basic-input amount-input">
+                </div>
+
+                </div>
+
+                <div>
+                    <input placeholder="Комменатрий к заказу" class="basic-input comment" type="text">
+                </div>
+
+                <div class="sticks-wrapper" >
+                    <div>
+                        <span class="sticks sticks-one">Палочки + соусник обычные</span>
+                        
+                        <span class="sticks" >Палочки + соусник обычные</span>
+                    </div>
+                    
+                    <div class="minus-plus">
+                        
+                        <button class="minus"></button>
+                        <p class="ten" >10</p>
+                        <button class="plus"></button>
+                        <br>
+                        <button class="minus"></button>
+                        <p class="ten" >10</p>
+                        <button class="plus"></button>
+
+                    </div>
+                </div>
+
+                <div>
+                    <input placeholder="Введите промокод" class="basic-input comment" type="text">
+                </div>
+            </div>
+
+            <div class="form-right">
+                <div>
+                <input class="radio-base" type="radio" name="Type" id="сourier" checked>
+                <label class="basic-input radio-input left" for="сourier">Курьером</label>
+
+                <input class="radio-base" type="radio" name="Type" id="pickup">
+                <label class="basic-input radio-input right" for="pickup">Самовывоз</label>
+                </div>
+
+                <div>
+                <input type="text" placeholder="Улица" class="basic-input tel-input">
+                <input type="text" placeholder="Дом" class="basic-input">
+                </div>
+
+                <div>
+                <input type="text" placeholder="Кв" class="basic-input VK-input">
+                <input type="text" placeholder="Подъезд" class="basic-input address-input">
+                <input type="text" placeholder="Этаж" class="basic-input address-input">
+                <input type="text" placeholder="Код" class="basic-input address-input">
+                </div>
+
+                <div>
+                    <input class="radio-base" type="radio" name="Types" id="cass" checked>
+                    <label class="basic-input radio-input left" for="cass">На сейчас</label>
+    
+                    <input class="radio-base" type="radio" name="Types" id="ca">
+                    <label class="basic-input radio-input right" for="ca">На время</label>
+                </div>
+
+                <div>
+                    <input placeholder="E-mail(необязательно)" class="basic-input E-mail" type="text">
+                </div>
+
+            </div>
+
+                
+
+        </form>
+        <button class="basic-input order">Оформить заказ</button>
+    </section>
+</body>
+
+</html>
